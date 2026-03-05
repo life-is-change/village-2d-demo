@@ -283,7 +283,7 @@
             houseTagsDiv.innerHTML = '';
             houseSummaryDiv.innerHTML = '';
 
-            fetch('house.json')
+            fetch('houses.json')
                 .then(response => {
                     if (!response.ok) {
                         throw new Error(`HTTP error! status: ${response.status}`);
@@ -415,4 +415,5 @@
     })();
 </script>
 </body>
+
 </html>
